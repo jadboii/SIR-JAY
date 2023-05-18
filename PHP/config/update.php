@@ -10,7 +10,7 @@ if (isset($_GET['ResidentID'])){
         return $data;
     }
 
-    $ResidentID = validate($_GET['ResidentID']);
+
 
     $sql = "SELECT * FROM tblscinfo WHERE ResidentID=$ResidentID";
     $result = mysqli_query($conn, $sql);
